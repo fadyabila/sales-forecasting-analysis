@@ -9,8 +9,10 @@ import streamlit as st
 
 # Load All Files
 
-model_lr = pickle.load('linreg_model.pkl')
-scaler = pickle.load('scaler.pkl')
+with open('linreg_model.pkl', 'rb') as file_1:
+  model_lr = pickle.load(file_1)
+with open('num_columns.pkl', 'rb') as file_2:
+  scaler = pickle.load(file_2)
 
 def run():
     # Load the time series data
