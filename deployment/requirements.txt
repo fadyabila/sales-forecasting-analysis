@@ -7,4 +7,3 @@ matplotlib
 numpy
 scikit-learn==1.2.1
 plotly
-pickle
